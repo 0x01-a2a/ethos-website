@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — 01 Ethos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;700&display=swap">
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --accent: #34c759;
+      --text: #111827;
+      --text-soft: #6b7280;
+      --border: rgba(0, 0, 0, 0.08);
+      --mono: 'JetBrains Mono', monospace;
+      --display: 'Inter', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--display);
+      font-size: 15px;
+      line-height: 1.7;
+      padding-top: 64px;
+    }
+
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 32px; }
+
+    /* Header */
+    .site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(247, 248, 250, 0.8);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .site-header .wrap {
+      display: flex; justify-content: space-between; align-items: center; height: 64px;
+    }
+    .as-logo { text-decoration: none; font-weight: 700; color: var(--text); font-size: 14px; }
+    .as-logo span { color: var(--accent); }
+    .back-link { text-decoration: none; color: var(--text-soft); font-size: 13px; font-weight: 500; }
+
+    .content { padding: 80px 0 100px; }
+    .kicker { font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; margin-bottom: 16px; }
+    h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 8px; }
+    .updated { font-family: var(--mono); font-size: 12px; color: var(--text-soft); margin-bottom: 48px; }
+
+    h2 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text); margin: 48px 0 16px; }
+    p { margin-bottom: 20px; color: var(--text-soft); }
+    ul { margin-bottom: 24px; list-style: none; }
+    li { margin-bottom: 12px; padding-left: 20px; position: relative; color: var(--text-soft); }
+    li::before { content: "◈"; position: absolute; left: 0; color: var(--accent); font-size: 10px; top: 4px; }
+
+    /* Specific disclaimer styling */
+    .disclaimer {
+        padding: 24px; background: white; border: 1px solid var(--border); border-radius: 12px; margin: 32px 0;
+    }
+    .disclaimer strong { color: var(--text); }
+
+    footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; }
+    .copy { color: rgba(0,0,0,0.3); font-size: 11px; font-family: var(--mono); }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="as-logo">01 <span>Ethos</span></a>
+    <a href="index.html" class="back-link">← Back</a>
+  </div>
+</header>
+
+<div class="content wrap">
+  <p class="kicker">Legal</p>
+  <h1>Terms of Service</h1>
+  <p class="updated">Last updated: April 2026</p>
+
+  <p>These Terms of Service ("Terms") govern your use of 01 Ethos ("the App"), developed by Infinity Team ("we", "us"). By downloading or using 01 Ethos, you agree to these Terms.</p>
+
+  <h2>1. Use of the App</h2>
+  <p>01 Ethos is a personal behavior monitor and AI analyst. You may use the App for personal, non-commercial purposes. You are responsible for ensuring your use of the App complies with local laws.</p>
+
+  <h2>2. Medical & Professional Disclaimer</h2>
+  <div class="disclaimer">
+    <p><strong>IMPORTANT:</strong> 01 Ethos is NOT a medical device, a healthcare service, or a replacement for professional therapy or addiction counseling. The AI interpretations and pattern analyses are generated automatically for self-reflection and entertainment purposes only.</p>
+    <p>Do not rely on 01 Ethos for medical advice, diagnosis, or clinical support. If you are experiencing a crisis or struggling with addiction, please consult with a qualified healthcare professional or licensed therapist immediately.</p>
+  </div>
+
+  <h2>3. Privacy & Data</h2>
+  <p>01 Ethos operates on a "Zero-Knowledge" architecture. We do not have access to your behavior logs, notes, or AI results. Your data belongs exclusively to you and stays on your device. We are not responsible for data loss from your device due to technical failure or app deletion.</p>
+
+  <h2>4. Subscriptions & Pro Features</h2>
+  <p>Some features require a monthly subscription ("01 Ethos Pro"). Payments are processed via Apple's App Store. Fees are non-refundable through us; any refund requests must be directed to Apple.</p>
+
+  <h2>5. Intellectual Property</h2>
+  <p>The App's code, design, and branding are the property of Infinity Team. The underlying AI model weights are used in accordance with their respective public licenses.</p>
+
+  <h2>6. Limitation of Liability</h2>
+  <p>Infinity Team shall not be liable for any damages arising out of your use or inability to use the App. Use of the App is at your own risk.</p>
+
+  <h2>7. Changes to Terms</h2>
+  <p>We may update these terms from time to time by updating the date on this page. Continued use of 01 Ethos signifies your acceptance of any changes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:contact@0x01.world" style="color: var(--accent); text-decoration: none;">contact@0x01.world</a></p>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="copy">© 2026 INFINITY TEAM · 0x01.WORLD</p>
+  </div>
+</footer>
+
+</body>
+</html>

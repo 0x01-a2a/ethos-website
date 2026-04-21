@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — 01 Ethos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;700&display=swap">
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --accent: #34c759;
+      --text: #111827;
+      --text-soft: #6b7280;
+      --border: rgba(0, 0, 0, 0.08);
+      --mono: 'JetBrains Mono', monospace;
+      --display: 'Inter', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--display);
+      font-size: 15px;
+      line-height: 1.7;
+      padding-top: 64px;
+    }
+
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 32px; }
+
+    /* Header */
+    .site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(247, 248, 250, 0.8);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .site-header .wrap {
+      display: flex; justify-content: space-between; align-items: center; height: 64px;
+    }
+    .as-logo { text-decoration: none; font-weight: 700; color: var(--text); font-size: 14px; }
+    .as-logo span { color: var(--accent); }
+    .back-link { text-decoration: none; color: var(--text-soft); font-size: 13px; font-weight: 500; }
+
+    .content { padding: 80px 0 100px; }
+    .kicker { font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; margin-bottom: 16px; }
+    h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 8px; }
+    .updated { font-family: var(--mono); font-size: 12px; color: var(--text-soft); margin-bottom: 48px; }
+
+    .summary {
+      background: white; border: 1px solid var(--border);
+      padding: 24px; border-radius: 16px; margin-bottom: 48px;
+    }
+    .summary p { margin-bottom: 0; font-weight: 500; color: var(--text); }
+
+    h2 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text); margin: 48px 0 16px; }
+    p { margin-bottom: 20px; color: var(--text-soft); }
+    ul { margin-bottom: 24px; list-style: none; }
+    li { margin-bottom: 12px; padding-left: 20px; position: relative; color: var(--text-soft); }
+    li::before { content: "◈"; position: absolute; left: 0; color: var(--accent); font-size: 10px; top: 4px; }
+
+    footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; }
+    .copy { color: rgba(0,0,0,0.3); font-size: 11px; font-family: var(--mono); }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="as-logo">01 <span>Ethos</span></a>
+    <a href="index.html" class="back-link">← Back</a>
+  </div>
+</header>
+
+<div class="content wrap">
+  <p class="kicker">Trust</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: April 2026</p>
+
+  <div class="summary">
+    <p>The short version: 01 Ethos does not collect, transmit, or store any personal data on external servers. Everything happens on your device.</p>
+  </div>
+
+  <h2>Local AI Commitment</h2>
+  <p>01 Ethos runs an AI language model directly on your iPhone using Apple Silicon. All inference — every reflection question and pattern analysis — happens on your device. No text you type or record is ever sent to a server for processing.</p>
+
+  <h2>Data Collection</h2>
+  <p><strong>We collect nothing.</strong> 01 Ethos does not collect, transmit, or share any personal information, usage data, analytics, or crash reports with us or any third party.</p>
+  <ul>
+    <li>No Name/Email required (No account exists).</li>
+    <li>No tracking of behaviors, events, or notes.</li>
+    <li>No device identifiers or IP logging.</li>
+    <li>No third-party SDKs (Firebase, Mixpanel, etc.).</li>
+  </ul>
+
+  <h2>Storage & Control</h2>
+  <p>All data is stored locally in your device's app sandbox. You have absolute control over your information:</p>
+  <ul>
+    <li><strong>Clear Data:</strong> You can reset specific behaviors or clear all logs in Settings.</li>
+    <li><strong>Full Reset:</strong> Deleting the app from your device permanently removes all data instantly.</li>
+  </ul>
+
+  <h2>Model Files</h2>
+  <p>The only network interaction the app performs is a one-time download of the AI model weights (~300 MB) when you first set up the app. This is a direct file transfer. No personal information is associated with this request.</p>
+
+  <h2>Third Party Services</h2>
+  <p>We do not use any third-party analytics or advertising services. Your usage is invisible to us.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:contact@0x01.world" style="color: var(--accent); text-decoration: none;">contact@0x01.world</a></p>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="copy">© 2026 INFINITY TEAM · 0x01.WORLD</p>
+  </div>
+</footer>
+
+</body>
+</html>

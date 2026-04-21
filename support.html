@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — 01 Ethos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;700&display=swap">
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --accent: #34c759;
+      --text: #111827;
+      --text-soft: #6b7280;
+      --border: rgba(0, 0, 0, 0.08);
+      --mono: 'JetBrains Mono', monospace;
+      --display: 'Inter', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--display);
+      font-size: 15px;
+      line-height: 1.7;
+      padding-top: 64px;
+    }
+
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 32px; }
+
+    /* Header */
+    .site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(247, 248, 250, 0.8);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .site-header .wrap {
+      display: flex; justify-content: space-between; align-items: center; height: 64px;
+    }
+    .as-logo { text-decoration: none; font-weight: 700; color: var(--text); font-size: 14px; }
+    .as-logo span { color: var(--accent); }
+    .back-link { text-decoration: none; color: var(--text-soft); font-size: 14px; font-weight: 500; }
+
+    .content { padding: 80px 0 100px; }
+    .kicker { font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; margin-bottom: 16px; }
+    h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 8px; }
+    .subtitle { font-size: 16px; color: var(--text-soft); margin-bottom: 52px; }
+
+    .contact-box {
+      background: white; border: 1px solid var(--border);
+      padding: 32px; border-radius: 20px; margin-bottom: 60px;
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 24px;
+    }
+    .contact-box p { margin-bottom: 0; font-size: 14px; color: var(--text-soft); }
+    .contact-box .btn {
+      background: var(--text); color: white; text-decoration: none;
+      padding: 12px 24px; border-radius: 12px; font-weight: 600; font-size: 14px;
+      white-space: nowrap; transition: background 0.2s;
+    }
+    .contact-box .btn:hover { background: #000; }
+
+    .faq-heading { font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--text); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 24px; }
+    .faq { display: flex; flex-direction: column; gap: 12px; }
+    details {
+      background: white; border: 1px solid var(--border); border-radius: 12px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 20px 24px; font-weight: 600; color: var(--text); cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--accent); font-size: 20px; font-weight: 400; transition: transform 0.2s; }
+    details[open] summary::after { transform: rotate(45deg); }
+    .answer { padding: 0 24px 20px; font-size: 14px; color: var(--text-soft); line-height: 1.6; }
+
+    footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; }
+    .copy { color: rgba(0,0,0,0.3); font-size: 11px; font-family: var(--mono); }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="as-logo">01 <span>Ethos</span></a>
+    <a href="index.html" class="back-link">← Back</a>
+  </div>
+</header>
+
+<div class="content wrap">
+  <p class="kicker">Support</p>
+  <h1>How can we help?</h1>
+  <p class="subtitle">Browse common questions below, or reach out directly.</p>
+
+  <div class="contact-box">
+    <p>Can't find what you're looking for? Our team is available for direct support.</p>
+    <a href="mailto:contact@0x01.world" class="btn">Email Support</a>
+  </div>
+
+  <p class="faq-heading">Frequently Asked Questions</p>
+
+  <div class="faq">
+    <details>
+      <summary>Does 01 Ethos send my behavior logs to the cloud?</summary>
+      <div class="answer">No. The AI model runs entirely on your device. Your behavior names, event logs, and reflection notes never leave your iPhone or iPad. After the initial model download, the app works entirely offline.</div>
+    </details>
+
+    <details>
+      <summary>Why is the one-time download so large?</summary>
+      <div class="answer">01 Ethos uses advanced large language AI models (Bonsai 4B) that run locally on your device's hardware. The initial download (~300 MB) contains the necessary parameters for the AI to function without an internet connection.</div>
+    </details>
+
+    <details>
+      <summary>Which devices are supported?</summary>
+      <div class="answer">Currently, 01 Ethos supports iPhone 15 Pro and newer (A17 Pro chips) and all modern iPads with Apple Silicon (M1, M2, M4 chips). Older devices may not have the neural engine performance required for real-time inference.</div>
+    </details>
+
+    <details>
+      <summary>How do I manage my Pro subscription?</summary>
+      <div class="answer">You can manage or cancel your 01 Ethos Pro subscription at any time through your Apple ID settings in the App Store. All payment processing is handled securely by Apple.</div>
+    </details>
+
+    <details>
+      <summary>How do I delete all my data?</summary>
+      <div class="answer">To delete everything, you can go to Settings → Reset All in the app, or simply delete 01 Ethos from your device. All local databases and and AI histories are removed instantly and permanently.</div>
+    </details>
+
+    <details>
+      <summary>Will there be an Android version?</summary>
+      <div class="answer">We are currently focused on the Apple Silicon ecosystem to take advantage of integrated neural processing via MLX. We do not have an immediate timeline for an Android release.</div>
+    </details>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="copy">© 2026 INFINITY TEAM · 0x01.WORLD</p>
+  </div>
+</footer>
+
+</body>
+</html>
